@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101820"><title>CRAFTPVP — Arena 1.8.9</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="cube">▦</span> CRAFT<span>PVP</span></a>
+  <nav><a href="#arena">Arena</a><a href="#modos">Modos</a><a href="#seguranca">Comunidade</a></nav>
+  <div class="right"><span class="version">JAVA 1.8.9</span><button class="ghost" id="accountBtn">ENTRAR</button></div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow"><i></i> SERVIDOR PÚBLICO · PROJETO EM DESENVOLVIMENTO</div>
+    <h1>SUA PRÓXIMA<br><span>ARENA</span> COMEÇA AQUI.</h1>
+    <p>Escolha seu modo, prepare seu nickname e entre na comunidade CRAFTPVP. A experiência será transmitida diretamente para o navegador.</p>
+    <a class="primary" href="#arena">ACESSAR O LOBBY <b>→</b></a>
+    <div class="hero-meta"><span>● ACESSO PELO NAVEGADOR</span><span>● PC E CELULAR</span></div>
+  </div>
+  <div class="hero-art"><div class="sun"></div><div class="block grass"></div><div class="block stone"></div><div class="block dirt"></div><div class="floating f1">⚔</div><div class="floating f2">✦</div><div class="art-label">CRAFTPVP / 1.8.9</div></div>
+</section>
+
+<section id="arena" class="arena">
+  <div class="section-head"><div><div class="eyebrow">PORTAL DO JOGADOR</div><h2>ENTRAR NA ARENA</h2></div><span class="status"><i></i> SERVIDOR EM CONFIGURAÇÃO</span></div>
+  <div class="arena-grid">
+    <div class="panel">
+      <label for="nickname">SEU NICKNAME</label>
+      <input id="nickname" maxlength="16" placeholder="Digite seu nick" autocomplete="nickname">
+      <label for="mode">MODO DE JOGO</label>
+      <select id="mode"><option>BedWars</option><option>SkyWars</option><option>Duels</option><option>Practice</option></select>
+      <button class="primary full" id="connect">CONECTAR AO JOGO <b>→</b></button>
+      <p id="notice" class="notice" role="status">A conexão ainda não está ativa. Estamos preparando os servidores.</p>
+    </div>
+    <div class="stream-panel">
+      <div class="stream-top"><span>JANELA DO JOGO</span><span class="live-dot">● OFFLINE</span></div>
+      <div class="stream-screen"><div class="crosshair">+</div><div class="stream-message"><span class="pixel">▦</span><strong>AGUARDANDO CONEXÃO</strong><small>O Minecraft aparecerá aqui quando a infraestrutura estiver instalada.</small></div></div>
+      <div class="stream-bottom"><span>W A S D · MOVIMENTAR</span><span>MOUSE · OLHAR</span><span>ESPAÇO · PULAR</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="modos" class="modes-section">
+  <div class="section-head"><div><div class="eyebrow">ESCOLHA SEU DESAFIO</div><h2>MODOS DE JOGO</h2></div><span class="muted">04 MODOS PLANEJADOS</span></div>
+  <div class="mode-grid">
+    <button class="mode-card" data-mode="BedWars"><span class="mode-icon">▰</span><span class="mode-name">BEDWARS</span><small>Proteja sua cama e vença as equipes.</small><b>ESCOLHER MODO →</b></button>
+    <button class="mode-card" data-mode="SkyWars"><span class="mode-icon">☁</span><span class="mode-name">SKYWARS</span><small>Equipe-se nas ilhas e seja o último.</small><b>ESCOLHER MODO →</b></button>
+    <button class="mode-card" data-mode="Duels"><span class="mode-icon">⚔</span><span class="mode-name">DUELS</span><small>Desafie outro jogador em uma arena.</small><b>ESCOLHER MODO →</b></button>
+    <button class="mode-card" data-mode="Practice"><span class="mode-icon">⌖</span><span class="mode-name">PRACTICE</span><small>Treine mira, combos e movimentação.</small><b>ESCOLHER MODO →</b></button>
+  </div>
+  <p class="selection">MODO SELECIONADO: <strong id="selectedMode">BEDWARS</strong></p>
+</section>
+
+<section id="seguranca" class="info">
+  <div><div class="eyebrow">JOGAR COM RESPONSABILIDADE</div><h2>UMA COMUNIDADE SEGURA</h2></div>
+  <div><p>Antes de abrir ao público, o projeto precisará de moderação de chat, ferramentas de denúncia e bloqueio, proteção contra bots e abuso, limites de acesso e regras claras. O protótipo não solicita senha Microsoft nem dados de pagamento.</p><p class="disclaimer">CRAFTPVP é um projeto independente, não oficial e não afiliado à Mojang ou Microsoft. Minecraft é uma marca de seus respectivos titulares.</p></div>
+</section>
+</main>
+<footer><span>CRAFTPVP © 2026</span><span>PROTÓTIPO PÚBLICO · INFRAESTRUTURA EM DESENVOLVIMENTO</span></footer>
+<script src="app.js"></script>
+</body></html>
